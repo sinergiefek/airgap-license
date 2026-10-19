@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airgap-license"
+version = "0.1.0"
+description = "Zero-Telemetry, Air-Gapped Ed25519 Cryptographic Licensing Engine for Sovereign B2B Software"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Setijono", email = "pipi@sinergimitravisitama.my.id" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries"
+]
+keywords = ["ed25519", "licensing", "air-gapped", "cryptography", "on-premise", "b2b-saas", "zero-telemetry"]
+requires-python = ">=3.8"
+dependencies = [
+    "cryptography>=41.0.0"
+]
+
+[project.scripts]
+airgap-license = "airgap_license.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sinergiefek/airgap-license"
+Documentation = "https://github.com/sinergiefek/airgap-license#readme"
+Issues = "https://github.com/sinergiefek/airgap-license/issues"
+Enterprise = "https://sinergimitravisitama.my.id"
